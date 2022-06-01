@@ -4,7 +4,8 @@ import Logo from '../img/logo-liso.png'
 
 const Footer = () => {
   return (
-  <div className='bg-white'>
+  <div className='pt-24'>
+    <hr />
     <div class="grid grid-cols-2 gap-2 p-5 justify-centerte text-center ">
       <div className=''>
         <img
@@ -12,10 +13,9 @@ const Footer = () => {
             alt="Logo" 
             className=" w-20 rounded-full mx-auto" 
           />
-        <span className='font-bold text-2xl text-gray-800'>
+        <span className='font-bold text-2xl text-white'>
           Asistencia 24/7
         </span>
-
         <p>
           <small>
             ©2022-2025
@@ -33,10 +33,9 @@ const Footer = () => {
 
         <Link to='/Contacto' className='text-gray-800 hover:text-gray-400 duration-500 md:ml-8 text-xl md:my-0 my-7'>Contacto  </Link>
 
-        <Link to='/TerminosCondiciones' className='text-gray-800 hover:text-gray-400 duration-500 md:ml-8 text-xl md:my-0 my-7'>Terminos y condiciones</Link>
+        <Link to='/Terminos' className='text-gray-800 hover:text-gray-400 duration-500 md:ml-8 text-xl md:my-0 my-7'>Terminos y condiciones</Link>
       </div>
     </div>
-    <hr />
     <div>
       
     </div>

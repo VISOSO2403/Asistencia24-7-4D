@@ -12,29 +12,33 @@ import { AuthProvider } from './context/authContext'
 function App() {
 
   return (
-    <BrowserRouter>
-      <AuthProvider>
-        <Routes>
-          <Route path='/' element={<Inicio />} />
+    <div  className="bg-slate-800">
+      <BrowserRouter>
+        <AuthProvider>
+          <Routes>
 
-          <Route 
-          path='/Home' 
-          element={
-            <ProtectedRoute>
-                <Home />
-              </ProtectedRoute>
-          }
-          />
-          
-          <Route path='/Login' element={<Login />} />
-          <Route path='/Register' element={<Register />} />
-          <Route path='/AcercaDe' element={<AcercaDe />} />
-          <Route path='/Contacto' element={<Contacto />} />
-          <Route path='/Terminos' element={<Terminos />} />
-          
-        </Routes>
-      </AuthProvider>
-    </BrowserRouter>
+            <Route>
+              <Route
+                path='/Home' 
+                element={
+                  <ProtectedRoute>
+                    <Home />
+                  </ProtectedRoute>
+                }
+              />
+              <Route path='/' element={<Inicio />} />
+            </Route>
+
+            <Route path='/Login' element={<Login />} />
+            <Route path='/Register' element={<Register />} />
+            <Route path='/AcercaDe' element={<AcercaDe />} />
+            <Route path='/Contacto' element={<Contacto />} />
+            <Route path='/Terminos' element={<Terminos />} />
+            
+          </Routes>
+        </AuthProvider>
+      </BrowserRouter>
+    </div>
   )
 }
 

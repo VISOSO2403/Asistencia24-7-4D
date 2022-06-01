@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useAuth } from "../context/authContext";
 import { Link , useNavigate } from "react-router-dom";
 import Google from '../img/google.svg'
+import NavBar from "../components/NavBar"
+import Footer from "../components/Footer";
 // import { Alert } from "./Alert";
 
 const Login = () => {
@@ -23,7 +25,7 @@ const Login = () => {
     setError("");
     try {
       await login(user.email, user.password);
-      navigate("/");
+      navigate("/Home");
     } catch (error) {
       console.log(error.code);
       if (error.code === "auth/user-not-found") {
@@ -40,7 +42,7 @@ const Login = () => {
   const handleGoogleSignin = async () => {
     try {
       await loginWithGoogle();
-      navigate("/");
+      navigate("/Home");
     } catch (error) {
       setError(error.message);
     }
@@ -48,7 +50,7 @@ const Login = () => {
   
   return (
     <>
-      <div className="container mx-auto px-4 h-full">
+      <div className="container mx-auto px-4 h-full pt-24">
         <div className="flex content-center items-center justify-center h-full">
           <div className="w-full lg:w-6/12 px-4">
             <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0">
@@ -60,6 +62,7 @@ const Login = () => {
                 </div>
                 <div className="btn-wrapper text-center">
                   <button
+                    onClick={handleGoogleSignin}
                     className="bg-white active:bg-slate-50 text-gray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
                     type="button"
                   >
@@ -67,7 +70,6 @@ const Login = () => {
                       alt="..."
                       className="w-5 mr-1"
                       src={Google}
-                      // require("../img/google.svg").default
                     />
                     Google
                   </button>
@@ -78,21 +80,7 @@ const Login = () => {
                 <div className="text-gray-400 text-center mb-3 font-bold">
                   <small>O inicia sesión con tus credenciales</small>
                 </div>
-                <form>
-                  {/* <div className="relative w-full mb-3">
-                    <label
-                      className="block uppercase text-gray-600 text-xs font-bold mb-2"
-                      htmlFor="grid-password"
-                    >
-                      Name
-                    </label>
-                    <input
-                      type="email"
-                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                      placeholder="Name"
-                    />
-                  </div> */}
-
+                <form onSubmit={handleSubmit}>
                   <div className="relative w-full mb-3">
                     <label
                       className="block uppercase text-gray-600 text-xs font-bold mb-2"
@@ -102,8 +90,11 @@ const Login = () => {
                     </label>
                     <input
                       type="email"
+                      name="email"
+                      id="email"
+                      placeholder="tucorreo@company.com"
                       className="border-0 px-3 py-3 placeholder-gray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                      placeholder="Email"
+                      onChange={handleChange}
                     />
                   </div>
 
@@ -116,35 +107,17 @@ const Login = () => {
                     </label>
                     <input
                       type="password"
-                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-gray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                      name="password"
+                      id="password"
                       placeholder="Password"
+                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-gray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                      onChange={handleChange}
                     />
                   </div>
-
-                  {/* <div>
-                    <label className="inline-flex items-center cursor-pointer">
-                      <input
-                        id="customCheckLogin"
-                        type="checkbox"
-                        className="form-checkbox border-0 rounded text-blueGray-700 ml-1 w-5 h-5 ease-linear transition-all duration-150"
-                      />
-                      <span className="ml-2 text-sm font-semibold text-blueGray-600">
-                        I agree with the{" "}
-                        <a
-                          href="#pablo"
-                          className="text-lightBlue-500"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          Privacy Policy
-                        </a>
-                      </span>
-                    </label>
-                  </div> */}
-
                   <div className="text-center mt-6">
                     <button
-                      className="bg-gray-800 text-white active:bg-gray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                       type="button"
+                      className="bg-gray-800 text-white active:bg-gray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                     >
                       Iniciar sesion
                     </button>
@@ -169,6 +142,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }
