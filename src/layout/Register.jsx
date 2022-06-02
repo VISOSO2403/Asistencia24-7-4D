@@ -37,29 +37,18 @@ const Register = () => {
     }
   };
 
-  const handleGoogleSignin = async () => {
-    try {
-      await loginWithGoogle();
-      navigate("/Home");
-    } catch (error) {
-      setError(error.message);
-    }
-  };
-
   return (
     <>
       <div className="h-screen fondo-login flex flex-nowrap bg-[url('./img/register&login.png')] bg-no-repeat">
         <div className="text-black w-full max-w-xs m-auto py-32 ">
           <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-200 border-0">
             <div className="rounded-t mb-0 px-6 py-6">
-              
-              
+              <div className="text-gray-400 text-center mb-3 font-bold">
+                <small>Ingresa tus credenciales</small>
+              </div>
               <hr className="mt-6 border-b-1 border-gray-300" />
             </div>
             <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
-              <div className="text-gray-400 text-center mb-3 font-bold">
-                <small>O inicia sesión con tus credenciales</small>
-              </div>
               <form onSubmit={handleSubmit}>
                 <div className="relative w-full mb-3">
                   <label
@@ -96,7 +85,7 @@ const Register = () => {
                 </div>
                 <div className="text-center mt-6">
                   <button
-                    type="button"
+                    type="submit"
                     className="bg-gray-800 text-white active:bg-gray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                   >
                     Registrar

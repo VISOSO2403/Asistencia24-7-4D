@@ -12,7 +12,6 @@ const Home = () => {
           <p className=" 2xl:pb-10 sm:pb-5">Visualización de estadísticas</p>
           <hr />
           <br />
-
           <section className="flex flex-col items-center">
             {/* BMP */}
             <iframe 
