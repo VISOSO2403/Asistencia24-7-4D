@@ -1,3 +1,4 @@
+import Footer from '../components/Footer'
 import Problema from '../img/problema.jpg'
 
 const AcercaDe = () => {
@@ -113,7 +114,7 @@ const AcercaDe = () => {
           </div>
         </div>
 
-
+        <Footer />
       </div>
     </>
   )

@@ -37,6 +37,10 @@ const Register = () => {
     }
   };
 
+  const handleChecbox = (e) => {
+    e.preventDefault
+  } 
+
   return (
     <>
       <div className="h-screen fondo-login flex flex-nowrap bg-[url('./img/register&login.png')] bg-no-repeat">
@@ -83,6 +87,25 @@ const Register = () => {
                     onChange={handleChange}
                   />
                 </div>
+                <div>
+                    <label className="inline-flex items-center cursor-pointer">
+                      <input
+                        id="customCheckLogin"
+                        type="checkbox"
+                        className="form-checkbox border-0 rounded text-gray-700 ml-1 w-5 h-5 ease-linear transition-all duration-150"
+                      />
+                      <span className="ml-2 text-sm font-semibold text-gray-600">
+                        Acepto los {" "}
+                        <a
+                          href='/Terminos'
+                          className="text-blue-500"
+                          onClick={handleChecbox}
+                        >
+                          Terminos y condiciones
+                        </a>
+                      </span>
+                    </label>
+                  </div>
                 <div className="text-center mt-6">
                   <button
                     type="submit"
