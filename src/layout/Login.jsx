@@ -49,7 +49,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="h-screen fondo-login flex flex-nowrap bg-[url('./img/register&login.png')] bg-no-repeat">
+      <div className=" bg-[url('./img/register&login.png')] bg-no-repeat">
         <div className="text-white w-full max-w-xs m-auto py-32 ">
           <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-200 border-0">
           {error && <Alert message={error} />}
