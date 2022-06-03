@@ -2,9 +2,8 @@ import { useState } from "react";
 import { useAuth } from "../context/authContext";
 import { Link, useNavigate } from "react-router-dom";
 import Google from "../img/google.svg";
-import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-// import { Alert } from "./Alert";
+import { Alert } from "../components/Alert";
 
 const Login = () => {
   const [user, setUser] = useState({
@@ -53,6 +52,7 @@ const Login = () => {
       <div className="h-screen fondo-login flex flex-nowrap bg-[url('./img/register&login.png')] bg-no-repeat">
         <div className="text-white w-full max-w-xs m-auto py-32 ">
           <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-200 border-0">
+          {error && <Alert message={error} />}
             <div className="rounded-t mb-0 px-6 py-6">
               <div className="text-center mb-3">
                 <h6 className=" text-gray-500 text-sm font-bold">
@@ -111,7 +111,7 @@ const Login = () => {
                 </div>
                 <div className="text-center mt-6">
                   <button
-                    type="button"
+                    type="submit"
                     className="bg-gray-800 text-white active:bg-gray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                   >
                     Iniciar sesion

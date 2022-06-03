@@ -1,3 +1,4 @@
+import Footer from '../components/Footer'
 import Problema from '../img/problema.jpg'
 
 const AcercaDe = () => {
@@ -33,10 +34,20 @@ const AcercaDe = () => {
               algunos conocimientos de electronica.
               <br /> <br /> 
             </p>
+            <p>
+              La manera en la cual se puede solucionar es en la implementación de una API que pueda alertar 
+              los problemas que se comentaron anteriormente, una forma sería generar un sonido mediante un 
+              sensor que en cuanto se aproxime un objeto este mismo emite un ruido de alerta para que tenga 
+              precaución. Es posible hacer modificaciones dependiendo la petición o recomendación del usuario 
+              ya sea si necesita enviar una notificación o mandarlo al sistema de Google Assistant para hacer 
+              un comunicado.
+              <br /> <br /> 
+            </p>
 
           </div>
-        </div>
+        </div>     
 
+        <Footer />
       </div>
 
     </>
