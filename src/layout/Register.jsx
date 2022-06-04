@@ -43,9 +43,10 @@ const Register = () => {
 
   return (
     <>
-      <div className="h-screen fondo-login flex flex-nowrap bg-[url('./img/register&login.png')] bg-no-repeat">
-        <div className="text-black w-full max-w-xs m-auto py-32 ">
+      <div className="bg-[url('./img/register&login.png')] w-full h-full relative bg-cover bg-no-repeat">
+        <div className=" w-full max-w-xs m-auto py-32 ">
           <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-200 border-0">
+          {error && <Alert message={error} />}
             <div className="rounded-t mb-0 px-6 py-6">
               <div className="text-gray-400 text-center mb-3 font-bold">
                 <small>Ingresa tus datos</small>
