@@ -49,8 +49,8 @@ const Login = () => {
 
   return (
     <>
-      <div className="bg-[url('./img/register&login.png')] "> 
-        <div className="text-white w-full max-w-xs m-auto py-11">
+      <div className= "bg-[url('./img/register&login.png')] w-full h-full relative bg-cover bg-no-repeat">
+        <div className=" w-full max-w-xs m-auto py-32">
           <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-200 border-0">
           {error && <Alert message={error} />}
             <div className="rounded-t mb-0 px-6 py-6">
@@ -80,7 +80,7 @@ const Login = () => {
                   <label
                     className="block uppercase text-gray-600 text-xs font-bold mb-2"
                     htmlFor="grid-password"
-                  >
+                    >
                     Email
                   </label>
                   <input
@@ -90,7 +90,7 @@ const Login = () => {
                     placeholder="tucorreo@company.com"
                     className="border-0 px-3 py-3 placeholder-gray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     onChange={handleChange}
-                  />
+                    />
                 </div>
 
                 <div className="relative w-full mb-3">
@@ -107,7 +107,7 @@ const Login = () => {
                     placeholder="Password"
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-gray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     onChange={handleChange}
-                  />
+                    />
                 </div>
                 <div className="text-center mt-6">
                   <button
