@@ -8,6 +8,7 @@ module.exports = {
       backgroundImage: {
         'Inicio': "url('/img/Inicio.png')",
         'Login': "url('/img/register&login.png')",
+        'Bienvenida': "url('/src/img/pattern_react.png')"
       }
     },
   },

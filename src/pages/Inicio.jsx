@@ -6,7 +6,7 @@ const Bienvenida = () => {
                         top-0 b-auto right-0 pt-16 mt-48 sm:mt-0 max-w-screen-2xl max-h-860px 
                         bg-[url('/src/img/pattern_react.png')]">
         <div className="container mx-auto items-center flex flex-wrap">
-          <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4 ">
+          <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4 bg-white ">
             <div className="pt-32 sm:pt-0 ">
               <h2 className="font-semibold text-4xl text-blueGray-600 ">
                 ¡Bienvenido a asistencia 24/7!
