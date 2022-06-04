@@ -49,8 +49,8 @@ const Login = () => {
 
   return (
     <>
-      <div className=" bg-[url('./img/register&login.png')] bg-no-repeat">
-        <div className="text-white w-full max-w-xs m-auto py-32 ">
+      <div className="bg-[url('./img/register&login.png')] "> 
+        <div className="text-white w-full max-w-xs m-auto py-11">
           <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-200 border-0">
           {error && <Alert message={error} />}
             <div className="rounded-t mb-0 px-6 py-6">
@@ -73,7 +73,7 @@ const Login = () => {
             </div>
             <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
               <div className="text-gray-400 text-center mb-3 font-bold">
-                <small>O inicia sesión con tus credenciales</small>
+                <small>O ingresa tus datos</small>
               </div>
               <form onSubmit={handleSubmit}>
                 <div className="relative w-full mb-3">

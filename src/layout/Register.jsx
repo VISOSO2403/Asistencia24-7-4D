@@ -48,7 +48,7 @@ const Register = () => {
           <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-200 border-0">
             <div className="rounded-t mb-0 px-6 py-6">
               <div className="text-gray-400 text-center mb-3 font-bold">
-                <small>Ingresa tus credenciales</small>
+                <small>Ingresa tus datos</small>
               </div>
               <hr className="mt-6 border-b-1 border-gray-300" />
             </div>

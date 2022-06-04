@@ -1,4 +1,4 @@
-import React from 'react'
+import Footer from "../components/Footer"
 
 const Terminos = () => {
   return (
@@ -67,6 +67,8 @@ const Terminos = () => {
           La relación entre el usuario y el titular se regirá por las legislaciones aplicables en México.
           MilFormatos no se responsabiliza por la indebida utilización del contenido, productos y/o servicios del sitio web y del incumplimiento de los presentes términos y condiciones.
         </p>
+
+        <Footer />
     </div>
   )
 }
