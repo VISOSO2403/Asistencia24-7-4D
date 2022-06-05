@@ -1,5 +1,7 @@
 import Footer from "../components/Footer";
-import Ejemploperfil from "../img/ejemploperfil.jpg";
+import Joss from "../img/joss.jpeg";
+import Oliver from "../img/oliver.jpeg"
+import Francisco from "../img/francisco.jpeg"
 
 const Contacto = () => {
   return (
@@ -23,7 +25,7 @@ const Contacto = () => {
               <div className="px-6">
                 <img
                   alt="nosotros"
-                  src={Ejemploperfil}
+                  src={Oliver}
                   className="shadow-lg rounded-full mx-auto max-w-120-px"
                 ></img>
               </div>
@@ -38,7 +40,7 @@ const Contacto = () => {
               <div className="px-6">
                 <img
                   alt="nosotros"
-                  src={Ejemploperfil}
+                  src={Joss}
                   className="shadow-lg rounded-full mx-auto max-w-120-px"
                 ></img>
               </div>
@@ -54,7 +56,7 @@ const Contacto = () => {
               <div className="px-6">
                 <img
                   alt="nosotros"
-                  src={Ejemploperfil}
+                  src=""
                   className="shadow-lg rounded-full mx-auto max-w-120-px"
                 ></img>
               </div>
@@ -69,7 +71,7 @@ const Contacto = () => {
               <div className="px-6">
                 <img
                   alt="nosotros"
-                  src={Ejemploperfil}
+                  src=""
                   className="shadow-lg rounded-full mx-auto max-w-120-px"
                 ></img>
               </div>
@@ -84,7 +86,7 @@ const Contacto = () => {
               <div className="px-6">
                 <img
                   alt="nosotros"
-                  src={Ejemploperfil}
+                  src={Francisco}
                   className="shadow-lg rounded-full mx-auto max-w-120-px"
                 ></img>
               </div>
