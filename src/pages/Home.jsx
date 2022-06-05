@@ -12,6 +12,9 @@ const Home = () => {
           <p className=" 2xl:pb-10 sm:pb-5">Visualización de estadísticas</p>
           <hr />
           <br />
+          <section className=" flex flex-col items-center pb-5">
+          <iframe width="50%" src="https://stem.ubidots.com/app/dashboards/public/widget/YXe1XkCbfzFBlJcUDjqFNz_iWoYr_5FPyfUakxHoOHE?embed=true"></iframe>
+          </section>
           <section className="flex flex-col items-center">
             {/* BMP */}
             <iframe 
@@ -42,7 +45,6 @@ const Home = () => {
               </h2>
           </section>
       </div>
-
       <Footer />
     </div>
   );

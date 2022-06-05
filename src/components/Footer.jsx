@@ -1,4 +1,3 @@
-import React from 'react'
 import  { Link } from 'react-router-dom'
 import Logo from '../img/logo-liso.png'
 
@@ -28,7 +27,7 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className=' grid grid-cols-3 items-center'>
+      <div className='grid grid-cols-1 items-center md:grid-cols-3'>
         <Link to='/AcercaDe' className='text-gray-400 hover:text-gray-300 duration-500 md:ml-8 text-xl md:my-0 my-7' >Acerca de...</Link>
 
         <Link to='/Contacto' className='text-gray-400 hover:text-gray-300 duration-500 md:ml-8 text-xl md:my-0 my-7'>Contacto  </Link>
