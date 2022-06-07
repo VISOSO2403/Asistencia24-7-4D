@@ -2,6 +2,8 @@ import Footer from "../components/Footer";
 import Joss from "../img/joss.jpeg";
 import Oliver from "../img/oliver.jpeg"
 import Francisco from "../img/francisco.jpeg"
+import Ivanna from "../img/ivanna.jpg"
+import Ernesto from "../img/ernesto.jpg"
 
 const Contacto = () => {
   return (
@@ -32,7 +34,7 @@ const Contacto = () => {
               <div className="pt-6 text-center">
                 <h5 className="text-x1 font-bold text-white">Oliver Visoso</h5>
                 <p className="mt-1 text-sm uppercase font-semibold text-white">
-                  rol que desempeña
+                  Programador de la aplicacion web
                 </p>
               </div>
             </div>
@@ -45,9 +47,9 @@ const Contacto = () => {
                 ></img>
               </div>
               <div className="pt-6 text-center">
-                <h5 className="text-x1 font-bold text-white">Josselin</h5>
+                <h5 className="text-x1 font-bold text-white">Josselin Valdez</h5>
                 <p className="mt-1 text-sm text-white uppercase font-semibold">
-                  rol que desempeña
+                  Programadora de la aplicacion web
                 </p>
               </div>
             </div>
@@ -56,14 +58,14 @@ const Contacto = () => {
               <div className="px-6">
                 <img
                   alt="nosotros"
-                  src=""
-                  className="shadow-lg rounded-full mx-auto max-w-120-px"
+                  src={Ivanna}
+                  className="shadow-lg rounded-full mx-auto max-w-120-px shrink w-60 h-60"
                 ></img>
               </div>
               <div className="pt-6 text-center">
                 <h5 className="text-x1 font-bold text-white">Ivanna Torres</h5>
                 <p className="mt-1 text-sm text-white uppercase font-semibold">
-                  rol que desempeña
+                  Documentadora y lider
                 </p>
               </div>
             </div>
@@ -71,14 +73,14 @@ const Contacto = () => {
               <div className="px-6">
                 <img
                   alt="nosotros"
-                  src=""
+                  src={Ernesto}
                   className="shadow-lg rounded-full mx-auto max-w-120-px"
                 ></img>
               </div>
               <div className="pt-6 text-center">
                 <h5 className="text-x1 font-bold text-white">Ernesto Jimenez</h5>
                 <p className="mt-1 text-sm text-white uppercase font-semibold">
-                  rol que desempeña
+                  Programador de la andadera
                 </p>
               </div>
             </div>
@@ -87,13 +89,13 @@ const Contacto = () => {
                 <img
                   alt="nosotros"
                   src={Francisco}
-                  className="shadow-lg rounded-full mx-auto max-w-120-px"
+                  className="shadow-lg rounded-full mx-aut max-w-120-px"
                 ></img>
               </div>
               <div className="pt-6 text-center">
                 <h5 className="text-x1 font-bold text-white">Alejandro Escobar</h5>
                 <p className="mt-1 text-sm text-white uppercase font-semibold">
-                  rol que desempeña
+                  Programador de la andadera
                 </p>
               </div>
             </div>

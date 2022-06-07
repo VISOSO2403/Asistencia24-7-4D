@@ -6,12 +6,15 @@ const Footer = () => {
   <div className=' text-white'>
     <hr />
     <div class="grid grid-cols-2 gap-2 p-5 justify-center text-center ">
-      <div className=''>
+      <div>
+      <Link to="/">
+        
         <img
             src={Logo} 
             alt="Logo" 
             className=" w-20 rounded-full mx-auto" 
           />
+      </Link> 
         <span className='font-bold text-2xl '>
           Asistencia 24/7
         </span>
